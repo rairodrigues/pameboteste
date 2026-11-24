@@ -1,15 +1,13 @@
 # Pamebo Pinturas — GitHub Pages
 
-Site estático, sem Node.js, instalação ou compilação.
+Versão de produção compilada a partir do mesmo componente usado no site de teste.
 
-1. Extraia este ZIP e envie TODOS os arquivos e a pasta images à raiz do repositório. O index.html precisa ficar na raiz, não dentro de uma subpasta.
-2. No GitHub, abra Settings → Pages.
-3. Em Build and deployment, selecione Deploy from a branch.
-4. Selecione main e / (root), depois Save.
-5. Aguarde a publicação e abra o endereço exibido pelo GitHub.
+## Publicação
 
-Os caminhos são relativos: funcionam tanto em usuario.github.io/repositorio/ quanto em domínio próprio. Nenhum domínio foi fixado neste pacote.
+1. Envie **todo o conteúdo desta pasta** para a raiz do repositório. O arquivo `index.html` deve ficar na raiz.
+2. Abra **Settings → Pages** no GitHub.
+3. Em **Build and deployment**, escolha **Deploy from a branch**.
+4. Selecione a branch **main** e a pasta **/ (root)**.
+5. Clique em **Save** e aguarde a publicação.
 
-Edite index.html para alterar os textos, styles.css para a aparência e script.js para galeria e WhatsApp. As fotos estão em images/acervo. O formulário prepara a mensagem; o visitante confirma o envio no WhatsApp.
-
-Para testar localmente, abra index.html no navegador. Opcionalmente execute python -m http.server 8000 nesta pasta.
+O arquivo `.nojekyll` deve ser enviado junto. Se o navegador ainda mostrar uma versão anterior, faça uma atualização forçada com `Ctrl + F5` após a conclusão do novo deploy.
